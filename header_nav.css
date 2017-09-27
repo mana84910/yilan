@@ -55,7 +55,7 @@ a{
 }
 /*nav*/
 header{
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 nav ul{
 	text-align: center;
@@ -116,7 +116,9 @@ nav li:hover a{
 	}
 }
 /*----------slider-----------*/
-
+.main_slider{
+	margin-bottom: 40px;
+}
 .sliders{
 	width: 800px;
 	height: 500px;
