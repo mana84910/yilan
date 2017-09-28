@@ -4,4 +4,22 @@ h2{
 	font-size: 25px;
 	color: #323232;
 	font-weight: bold;
+	margin-bottom: 30px;
+}
+/*最新訊息*/
+.main_news{
+	display: flex;
+}
+.news_list{
+	width: 33.33%;
+	margin:0 15px;
+}
+.news_img{
+	max-width:290px;
+	max-height: 250px;
+	overflow: hidden; 
+	margin:0 auto;
+}
+.news_img img{
+	width: 100%;
 }
