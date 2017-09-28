@@ -1,6 +1,8 @@
 @charset "utf-8";
 body{
 	font-family: Arial, "微軟正黑體";
+	padding: 10px;
+	border:7px solid #ffdc00;
 }
 *{
 	transition: all .5s;
@@ -119,6 +121,9 @@ nav li:hover a{
 	}
 }
 /*----------slider-----------*/
+.main_slider{
+	overflow: hidden;
+}
 .sliders{
 	width: 800px;
 	height: 500px;
@@ -130,7 +135,6 @@ nav li:hover a{
 @media screen and (max-width: 729px){
 	.main_slider{
 		height: 400px;
-		overflow: hidden;
 	}
 	.sliders1{
 		width: 500px;

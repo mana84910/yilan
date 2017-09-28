@@ -29,3 +29,14 @@ $(".sliders2").vegas({
     ],
 	animation: 'kenburns'
 });
+/*totop*/
+$(function(){
+	$(window).scroll(function(even){
+		var st = $(this).scrollTop();
+		if(st >= 180){
+			$(".totop a").css("display", "block");
+		}else{
+			$(".totop a").css("display", "none");
+		}
+	});
+});
