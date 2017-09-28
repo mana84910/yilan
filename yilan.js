@@ -44,3 +44,10 @@ $(".totop").click(function(){
 	$("html, body").animate({ scrollTop: 0 }, 600);
 	return false;
 });
+/*---新景點小視窗-----*/
+$(".new_place_img, .new_place_title a").click(function(){
+	$("#new_place_box").css("display", "block");
+	$(".box_icon").click(function(){
+		$("#new_place_box").css("display", "none");
+	});
+});

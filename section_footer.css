@@ -177,6 +177,57 @@ h3{
 		max-width: 200px;
 	}
 }
+/*新景點小視窗*/
+#new_place_box{
+	display: none;
+	position: fixed;
+	z-index: 3;
+	top: 30%;
+	left:25%;
+	right: 25%;
+	margin:auto;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 0 6px #bbb;
+	border-radius: 20px;
+	border:2px solid #ffdc00;
+}
+.flex_box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.box1 img{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+.box2 p{
+	color: #323232;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 10px;
+	line-height: 22px;
+}
+.box2 :first-child{
+	color: #7780FA;
+	font-size: 22px;
+}
+.box_icon img{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+}
+@media screen and (max-width: 669px){
+	#new_place_box{
+		top: 20%;
+		left:10%;
+		right: 10%;
+		margin:auto;
+	}
+}
 /*歷史足跡*/
 .main_history{
 	display: flex;
