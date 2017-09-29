@@ -6,7 +6,7 @@ var new_place = [
 		time : '營業時間: 09:00–21:00',
 		tel : '電話: 03-977-1362',
 		price : '售價: 40~90元',
-		text : '建議:<br />可先去頭城老街晃晃，在過去店裡吃。'
+		text : '建議:<br />可先去頭城老街逛，再過去店裡吃。'
 	}, {
 		src : 'images/new_place_2.png',
 		name : '樂山溫泉拉麵',
@@ -14,7 +14,7 @@ var new_place = [
 		time : '營業時間: 11:00–14:00, 17:00–21:00',
 		tel : '電話: 03-988-8637',
 		price : '售價: 110~420元',
-		text : '建議:<br />可去湯圍溝溫泉公園散步，在過去店裡吃，泡腳多收服務費10元。'
+		text : '建議:<br />可先去湯圍溝溫泉公園散步，再過去店裡吃，泡腳多收服務費10元。'
 	}, {
 		src : 'images/new_place_3.png',
 		name : '員山機堡',
@@ -32,10 +32,11 @@ var new_place = [
 		price : '門票: 大人200元，3歲以下免費',
 		text : '建議:<br />可安排上午去參觀，中午直接在裡面吃，門票的100元可折抵商品。'
 	}
-], html = '';
+];
 
 $(".new_place_img, .new_place_title a").click(function(){
 	var self = $(this).parent().index();
+	var html = '';
 	html += '<div class="new_place_box"><div class="flex_box"><div class="box1"><img src="' + new_place[self].src+ '" alt=""></div><div class="box2"><p>' + new_place[self].name + '</p><p>' + new_place[self].add + '<br />' + new_place[self].time + '<br />' + new_place[self].tel + '<br />' + new_place[self].price + '</p><p>' + new_place[self].text + '</p></div><div class="box_icon"><img src="images/close.png" alt=""></div></div></div>';
 	$('header').after(html);
 	$(".new_place_box").css("display", "block");
@@ -44,7 +45,3 @@ $(".new_place_img, .new_place_title a").click(function(){
 	});
 });
 
-// for (var i = 0; i<new_place.length; i++){
-// 	html += '<div id="new_place_box"><div class="flex_box"><div class="box1"><img src="' + new_place[i].src+ '" alt=""></div><div class="box2"><p>' + new_place[i].name + '</p><p>' + new_place[i].add + '<br />' + new_place[i].time + '<br />' + new_place[i].tel + '<br />' + new_place[i].price + '</p><p>建議:<br />' + new_place[i].text + '</p></div><div class="box_icon"><img src="images/close.png" alt=""></div></div></div>';
-// }
-// $('header').after(html);

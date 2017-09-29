@@ -13,7 +13,9 @@ $(".sliders1").vegas({
 	slides: [
     { src: "images/slider_1.jpg" },
     { src: "images/slider_2.jpg" },
-    { src: "images/slider_3.jpg" }
+    { src: "images/slider_3.jpg" },
+    { src: "images/slider_4.jpg" },
+    { src: "images/slider_5.jpg" }
 	],
 	animation: 'kenburns'
 });
@@ -22,9 +24,11 @@ $(".sliders2").vegas({
 	preload: true,
 	timer: false,
     slides: [
-        { src: "images/slider_4.jpg" },
-        { src: "images/slider_5.jpg" },
-        { src: "images/slider_6.jpg" }
+        { src: "images/slider_1.jpg" },
+	    { src: "images/slider_2.jpg" },
+	    { src: "images/slider_3.jpg" },
+	    { src: "images/slider_4.jpg" },
+    	{ src: "images/slider_5.jpg" }
     ],
 	animation: 'kenburns'
 });
@@ -43,10 +47,3 @@ $(".totop").click(function(){
 	$("html, body").animate({ scrollTop: 0 }, 600);
 	return false;
 });
-/*---新景點小視窗-----*/
-// $(".new_place_img, .new_place_title a").click(function(){
-// 	$(".new_place_box").css("display", "block");
-// 	$(".box_icon").click(function(){
-// 		$(".new_place_box").css("display", "none");
-// 	});
-// });
