@@ -149,12 +149,12 @@ h3{
 .main_new_place{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-flow: row wrap;
 }
 .new_place_list{
-	width:200px;
-	margin:0 15px;
-	padding-bottom: 50px;
+	width:25%;
+	margin:0;
+	padding:0 15px 50px;
 }
 .new_place_img{
 	max-width:200px;
@@ -236,6 +236,9 @@ h3{
 	height: 200px;
 	border-radius: 10px;
 }
+.box2{
+	max-width: 300px;
+}
 .box2 p{
 	color: #323232;
 	font-size: 18px;
@@ -253,6 +256,12 @@ h3{
 	right: 20px;
 	width: 30px;
 	height: 30px;
+}
+@media screen and (max-width: 1110px){
+	.box2{
+		max-width: 450px;
+		margin:0 auto;
+	}
 }
 @media screen and (max-width: 669px){
 	.new_place_box{
