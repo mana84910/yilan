@@ -1,0 +1,142 @@
+@charset "utf-8";
+body{
+	font-family: Arial, "微軟正黑體";
+	padding: 10px;
+	border:7px solid #ffdc00;
+}
+*{
+	transition: all .5s;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+.wrap{
+	max-width: 960px;
+	margin:0 auto;
+}
+.wrap2{
+	margin-bottom: 80px;
+}
+/*logo*/
+.logo{
+	text-align: center;
+	padding: 30px 0;
+}
+.logo img{
+	height: 80px;
+}
+@media screen and (max-width: 729px){
+	.logo{
+		padding: 1em 0;
+	}
+}
+/*漢堡*/
+.menu_icon{
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 40px;
+}
+.menu_icon span{
+	display: block;
+	width: 36px;
+	height: 5px;
+	background: #333;
+	margin-bottom: 7px;
+	border-radius: 4px;
+	transition: 0.4s;
+}
+.active .bar1{
+	-webkit-transform: rotate(-45deg) translate(-9px, 7px);
+    transform: rotate(-45deg) translate(-9px, 7px);
+}
+.active .bar2{
+	opacity: 0;
+}
+.active .bar3{
+	-webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+/*nav*/
+header{
+	margin-bottom: 40px;
+}
+nav ul{
+	text-align: center;
+}
+nav li{
+	display: inline-block;
+	padding: 0 15px;
+	
+}
+nav a{
+	font-size: 25px;
+	color: #323232;
+	font-weight: bold;
+	
+}
+nav li:hover a{
+	opacity: 0.7;
+}
+@media screen and (max-width: 729px){
+	/*nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		min-height: 100px;
+		width: 100%;
+	}*/
+	header{
+		border-bottom: 1px solid #00a8f3;
+	}
+	.menu_icon{
+		display: block;
+	}
+	.menu_list{
+		display: none;
+	}
+	.nav_menu_active{
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height:100%;
+		background: rgba(255, 255, 255, .9);
+	}
+	.menu_list_active{
+		display: block;
+		position: absolute;
+		top: 15%;
+		left: 0;
+		right: 0;
+	}
+	.menu_list li{
+		float: left;
+		width: 50%;
+		padding: 30px 0;
+	}
+}
+/*footer*/
+footer{
+	padding-top: 80px;
+}
+.ft_logo{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.ft_logo img{
+	height: 70px;
+	padding: 10px;
+	border-radius: 6px;
+}
+footer p{
+	color: #868686;
+	text-align: center;
+	max-width: 500px;
+	padding-bottom: 15px;
+}
+
