@@ -36,7 +36,7 @@ var new_place = [
 
 $(".new_place_img, .new_place_title a").click(function(){
 	var self = $(this).parent().index();
-	html += '<div class="new_place_box"><div class="flex_box"><div class="box1"><img src="' + new_place[self].src+ '" alt=""></div><div class="box2"><p>' + new_place[self].name + '</p><p>' + new_place[self].add + '<br />' + new_place[self].time + '<br />' + new_place[self].tel + '<br />' + new_place[self].price + '</p><p>建議:<br />' + new_place[self].text + '</p></div><div class="box_icon"><img src="images/close.png" alt=""></div></div></div>';
+	html += '<div class="new_place_box"><div class="flex_box"><div class="box1"><img src="' + new_place[self].src+ '" alt=""></div><div class="box2"><p>' + new_place[self].name + '</p><p>' + new_place[self].add + '<br />' + new_place[self].time + '<br />' + new_place[self].tel + '<br />' + new_place[self].price + '</p>' + new_place[self].text + '</p></div><div class="box_icon"><img src="images/close.png" alt=""></div></div></div>';
 	$('header').after(html);
 	$(".new_place_box").css("display", "block");
 	$(".box_icon").click(function(){
