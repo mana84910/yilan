@@ -6,7 +6,6 @@ $(".menu_icon").click(function(){
 });
 
 /*幻燈片*/
-
 $(".sliders1").vegas({
 	slide: 2,
 	preload: true,

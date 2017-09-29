@@ -266,7 +266,7 @@ h3{
 .main_history{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;/*水平*/
+	justify-content: space-between;
 }
 .history_list p{
 	color: #323232;

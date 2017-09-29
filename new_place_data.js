@@ -43,6 +43,7 @@ $(".new_place_img, .new_place_title a").click(function(){
 		$(this).parent().parent().remove();
 	});
 });
+
 // for (var i = 0; i<new_place.length; i++){
 // 	html += '<div id="new_place_box"><div class="flex_box"><div class="box1"><img src="' + new_place[i].src+ '" alt=""></div><div class="box2"><p>' + new_place[i].name + '</p><p>' + new_place[i].add + '<br />' + new_place[i].time + '<br />' + new_place[i].tel + '<br />' + new_place[i].price + '</p><p>建議:<br />' + new_place[i].text + '</p></div><div class="box_icon"><img src="images/close.png" alt=""></div></div></div>';
 // }
