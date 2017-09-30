@@ -106,7 +106,7 @@
 		width: 50%;
 	}
 }
-/*歷史足跡*/
+/*----歷史足跡----*/
 .main_history{
 	position: relative;
 }
@@ -117,7 +117,7 @@
 	margin-left: -2px;
 	width: 4px;
 	height: 100%;
-	background:#323232;
+	background:#bbb;
 }
 .time_box{
 	position: relative;
@@ -139,7 +139,8 @@
 .time_data p{
 	line-height: 20px;
 }
-@media screen and (min-width: 926px){
+@media screen and (min-width: 845px){
+	
 	.time_data{
 		position: relative;
 		width: 45%;
@@ -170,12 +171,11 @@
 		border-color: transparent;
 		border-left-color: rgba(225, 220, 0, .3);
 	}
-
 	.time_box:nth-child(odd) .time_data{
 		float:right;
 	}
 }
-@media screen and (max-width: 925px){
+@media screen and (max-width: 844px){
 	.timeline{
 		left: 50px;
 	}
