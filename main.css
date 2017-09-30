@@ -33,7 +33,17 @@
 .page_img img{
 	border-radius: 20px;
 	width: 100%;
+	-webkit-animation: img_in 2s 1; 
+    animation: img_in 2s 1;
 }
+@-webkit-keyframes img_in {/*上面大圖淡入*/
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+@keyframes img_in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
 .page_title{
 	text-align: center;
 	font-size: 22px;
@@ -107,109 +117,62 @@
 	}
 }
 /*----歷史足跡----*/
-.main_history{
-	position: relative;
+.history_box{
+	max-width: 960px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 40px;
+    border-bottom: 1px solid #bbb;
 }
-.timeline{
-	position: absolute;
-	top: 0;
-	left: 50%;
-	margin-left: -2px;
-	width: 4px;
-	height: 100%;
-	background:#bbb;
+.history_box .history_item{
+	 width: 25%;
+	 margin:0;
+	 padding:0 15px 40px;
 }
-.time_box{
-	position: relative;
-	margin: 30px auto;
-}
-.timecircle{
-	position: absolute;
-	left: 50%;
-	margin-left: -30px;
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	background: #ffdc00;
-	text-align: center;
-	font-size: 22px;
+.history_date{
+	font-size: 18px;
 	color: #323232;
-	line-height: 60px;
+	font-weight: bold;
+	padding: 20px 12px 0;
 }
-.time_data p{
-	line-height: 20px;
+.year_img{
+	position: relative;/*給年對位置*/
 }
-@media screen and (min-width: 845px){
-	
-	.time_data{
-		position: relative;
-		width: 45%;
-		padding: 30px;
-		background: rgba(225, 220, 0, .3);
-		box-shadow: 0 3px 0 #bbb;
-		border-radius: 20px;
-	}
-
-	.time_box:nth-child(odd) .time_data::before{/*對話框小三角形*/
-		content: '';
-		position: absolute;
-		top:24px;
-		right: 100%;
-		height: 0;
-		width: 0;
-		border: 7px solid transparent;
-		border-right: 7px solid rgba(225, 220, 0, .3);
-	}
-	.time_box:nth-child(even) .time_data::before{/*對話框小三角形從上面數單數*/
-		content: '';
-		position: absolute;
-		top:24px;
-		left: 100%;
-		height: 0;
-		width: 0;
-		border: 7px solid transparent;
-		border-color: transparent;
-		border-left-color: rgba(225, 220, 0, .3);
-	}
-	.time_box:nth-child(odd) .time_data{
-		float:right;
-	}
+.history_year{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -14px 0 0 -31.1px;
+	font-size: 28px;
+	font-weight: bold;
 }
-@media screen and (max-width: 844px){
-	.timeline{
-		left: 50px;
+.history_img{
+	max-width: 200px;
+}
+.history_img img{
+	width: 100%;
+	display: block;
+	-webkit-animation: img_in 2s 1; 
+    animation: img_in 2s 1;
+    transition: all .1s;
+}
+.history_item a:hover .history_img img{
+	outline: 10px solid #fff;
+	outline-offset: -10px;
+}
+@media screen and (max-width: 500px){
+	.history_box{
+		display: block;
 	}
-	.time_box{
-		max-width: 800px;
+	.history_box .history_item{
+		width: 100%;
+		margin: 0 auto;
+		max-width: 300px;
 	}
-	.timecircle{
-		left: 50px;
-		margin-left: -20px;
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		background: #ffdc00;
-		text-align: center;
-		font-size: 20px;
-		color: #323232;
-		line-height: 40px;
+	.history_img{
+		max-width: 300px;
 	}
-	.time_data{
-		position: relative;
-		margin: 0 10px 0 80px;
-		padding: 20px;
-		background: rgba(225, 220, 0, .3);
-		box-shadow: 0 3px 0 #bbb;
-		border-radius: 20px;
-	}
-	.time_box .time_data::before{
-		content: '';
-		position: absolute;
-		top:16px;
-		right: 100%;
-		height: 0;
-		width: 0;
-		border: 7px solid transparent;
-		border-right: 7px solid rgba(225, 220, 0, .3);
+	.year_img img{
+		max-height: 100px;
 	}
 }
